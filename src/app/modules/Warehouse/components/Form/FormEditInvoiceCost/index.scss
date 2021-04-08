@@ -1,0 +1,21 @@
+.form-edit-invoice-cost {
+    .react-datepicker-wrapper {
+        display: block;
+    }
+
+    [class|="col"] {
+        padding-bottom: 12.5px;
+
+        label {
+            font-weight: 600;
+        }
+
+        .feedback {
+            display: none;
+        }
+
+        .invalid-datepicker-feedback{
+            color: #F64E60;
+        }
+    }
+}

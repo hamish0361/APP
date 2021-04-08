@@ -1,0 +1,20 @@
+.dialog-add-new-product {
+    .app-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            display: block;
+            outline: none !important;
+            border: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.list-pallet-wrapper {
+    .title {
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .pagination {
+            display: none;
+        }
+
+        .title {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.product-item-autocomplete {
+    min-width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-left: 0;
+    z-index: 1;
+    position: absolute;
+    background: #fafbfb;
+}
+.product-item-autocomplete > li {
+    list-style: none;
+    padding: 5px;
+}
+.product-item-autocomplete > li:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.table-list-box-in-lading-bill {
+    .MuiTableRow-root {
+        .MuiTableCell-root:last-child {
+            white-space: nowrap;
+        }
+    }
+
+    .dropdown-actions {
+        &::after {
+            content: none;
+        }
+    }
+
+    .scrollbar-container.ps {
+        overflow: visible !important;
+    }
+
+    .cell-actions {
+        .dropdown-menu {
+            .dropdown-item {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    &.MuiTable-root {
+        th,
+        td {
+            font-size: 16px;
+        }
+    }
+
+    .pivot-storage-cost {
+        white-space: nowrap;
+
+        div + div {
+            margin-top: 10px;
+        }
+    }
+}

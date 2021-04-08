@@ -1,0 +1,22 @@
+$bayAreaSize: 250px;
+
+.bay-area {
+    width: 100%;
+    padding: 10px;
+
+    .main-area {
+        background: #fff;
+        width: 40%;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+            0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        height: $bayAreaSize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:rgba(0, 0, 0, 0.06);
+
+        .title {
+            font-size: 2vw;
+        }
+    }
+}

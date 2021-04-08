@@ -1,0 +1,16 @@
+.invoice-status {
+    .status-item {
+
+        label {
+            font-weight: 600;
+        }
+
+        .MuiLinearProgress-root {
+            height: 10px;
+        }
+
+        + .status-item {
+            margin-top: 15px;
+        }
+    }
+}

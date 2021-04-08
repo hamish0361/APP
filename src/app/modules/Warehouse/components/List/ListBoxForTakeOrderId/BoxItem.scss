@@ -1,0 +1,87 @@
+.box-item-for-take-order {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+
+    .cur-order {
+        min-width: 120px;
+    }
+
+    .box-info {
+        flex-grow: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .sku {
+        font-size: 24px;
+        font-weight: 500;
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #3699FF;
+    }
+
+    .custom-prop-box {
+        font-size: 16px;
+        padding: 5px 10px;
+
+        .title {
+            margin-right: 10px;
+            text-decoration: underline;
+
+            &:after {
+                content: ':';
+            }
+        }
+
+        .value {
+            font-size: 18px;
+            font-weight: 500;
+            color: #28a745;
+        }
+
+        .extra {
+            color: #8c8c8c;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+
+    .save-update {
+        align-self: flex-end;
+        margin-left: 30px;
+
+        .btn-save {
+            font-size: 18px;
+            height: 35.59px;
+            width: 100px;
+        }
+    }
+
+    .item-identify {
+        display: flex;
+        align-items: center;
+    }
+
+    .take-order-section {
+        display: flex;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 1023px) {
+        justify-content: space-between;
+
+        .sku {
+            width: auto;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        flex-direction: column;
+    }
+
+}

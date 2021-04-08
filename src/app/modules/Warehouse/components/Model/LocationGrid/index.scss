@@ -1,0 +1,37 @@
+.location-grid {
+    .grid-location-container {
+        display: flex;
+
+        .grid-location-row {
+            display: flex;
+            padding: 3px;
+            width: auto;
+            height: auto;
+            border: 1px solid #fff;
+            flex-direction: column;
+
+            &:not(:first-child) {
+                border-left: 0;
+            }
+
+            &.empty-row {
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 67px;
+                font-weight: 600;
+                color: #595959;
+            }
+        }
+    }
+
+    .empty-location-item {
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fadb14;
+    }
+}

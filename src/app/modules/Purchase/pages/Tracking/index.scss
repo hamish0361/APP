@@ -1,0 +1,9 @@
+.container-date {
+    & > .react-datepicker-wrapper {
+        width: 100%;
+    }
+}
+
+.container-modal {
+    min-width: 850px;
+}

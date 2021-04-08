@@ -1,0 +1,53 @@
+.filter-jancode-extra-data {
+    .product-identify {
+        padding: 0 20px;
+
+        .product-id {
+            font-size: 18px;
+            color: #1890ff;
+        }
+
+        .image-section {
+            > img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .product-content {
+        flex-grow: 1;
+
+        .product-name {
+            font-size: 22px;
+            font-weight: 500;
+            color: #1890ff;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: #389e0d;
+        }
+
+        .product-ingredients {
+            font-size: 16px;
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 16px;
+        font-weight: 600;
+
+        >div:nth-child(1) {
+            color: #1890ff;
+        }
+
+        >div:nth-child(2) {
+            color: #389e0d;
+        }
+    }
+}

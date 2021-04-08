@@ -1,0 +1,30 @@
+.table-lading-bill {
+    .MuiBox-root {
+        min-width: 0;
+    }
+
+    .MuiTableCell-root {
+        white-space: nowrap;
+    }
+
+    .MuiTable-root {
+        th,
+        td {
+            font-size: 16px;
+        }
+    }
+
+    .shipment {
+        font-size: 15px;
+    }
+
+    .container-info {
+        font-size: 14px;
+
+        + .container-info {
+            margin-top: 5px;
+            padding-top: 5px;
+            border-top: 1px solid #d8d8d8;
+        }
+    }
+}

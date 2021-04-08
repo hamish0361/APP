@@ -1,0 +1,41 @@
+.add-order {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    font-size: 16px;
+
+    label,
+    .btn {
+        font-size: 16px;
+    }
+
+    .form-add-order {
+        flex-wrap: wrap;
+
+        label {
+            white-space: nowrap;
+        }
+    }
+
+    @media only screen and (max-width: 1239px) {
+        .form-add-order {
+            > div {
+                max-width: 50%;
+                width: 50%;
+                flex-basis: 50%;
+                padding-top: 12.5px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .form-add-order {
+            > div {
+                max-width: 100%;
+                width: 100%;
+                flex-basis: 100%;
+                padding-top: 12.5px;
+            }
+        }
+    }
+}

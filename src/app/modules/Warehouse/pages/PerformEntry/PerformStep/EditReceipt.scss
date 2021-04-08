@@ -1,0 +1,106 @@
+.edit-receipt {
+    padding: 10px 0;
+
+    .form-edit-receipt {
+        width: 300px;
+
+        .form-actions {
+            text-align: right;
+        }
+    }
+
+    .receipt-list {
+        margin-left: 15px;
+        border-left: 1px solid #d8d8d8;
+        flex-grow: 1;
+        overflow: auto;
+        max-height: 150px;
+        padding-left: 15px;
+
+        .receipt-item {
+            display: flex;
+            font-size: 14px;
+            justify-content: space-between;
+            background: #fafafa;
+            padding: 10px;
+
+            + .receipt-item {
+                border-top: 1px solid #d8d8d8;
+            }
+
+            .receipt-path {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 500px;
+            }
+
+            .receipt-time-create {
+                font-size: 12px;
+                color: #bfbfbf;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1023px) {
+        .receipt-list {
+
+            .receipt-item {
+                flex-direction: column;
+            }
+
+            .receipt-info {
+                width: 100%;
+            }
+
+            .receipt-actions {
+                white-space: nowrap;
+                text-align: right;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        > .d-flex {
+            flex-direction: column;
+        }
+
+        .form-edit-receipt {
+            width: 100%;
+
+            .form-actions {
+                white-space: nowrap;
+                display: flex;
+                align-items: flex-end;
+                padding-bottom: 15px;
+                flex-direction: row-reverse;
+
+                .btn-secondary {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .receipt-list {
+            margin-left: 0;
+            padding-left: 0;
+            border: 0;
+            overflow: auto;
+
+            .receipt-item {
+                overflow: visible;
+                width: 100%;
+                flex-direction: column;
+
+                .receipt-info {
+                    width: 100%;
+                }
+
+                .receipt-actions {
+                    white-space: nowrap;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

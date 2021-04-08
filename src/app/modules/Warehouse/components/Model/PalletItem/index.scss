@@ -1,0 +1,67 @@
+$palletSize: 50px;
+
+.pallet-item-model {
+
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    min-width: 60px;
+
+    &.placeholder {
+        opacity: .1;
+    }
+
+    &.empty-pallet {
+        opacity: .8;
+    }
+
+    &:hover {
+        background: rgba(54, 155, 255, .1);
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 0;
+
+        svg {
+            width: $palletSize;
+            height: $palletSize;
+        }
+    }
+
+    &__id {
+        color: #F64E60;
+        padding: 3px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+        background: #fff;
+        border-radius: 3px;
+    }
+
+    &_boxes-length {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        background: #f5222d;
+        color: #fff;
+        font-weight: 600;
+        padding: 0 5px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+
+    &.active {
+        background: #d9f7be;
+    }
+}

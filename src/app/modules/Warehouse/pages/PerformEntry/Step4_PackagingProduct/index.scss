@@ -1,0 +1,37 @@
+.packaging-product {
+    .list-box {
+        .MuiTableCell-root.MuiTableCell-body:nth-child(2) {
+            font-size: 22px;
+        }
+    }
+
+    .card-toolbar {
+        min-width: 300px;
+    }
+
+    .have-parent {
+        background: url('../../../../../../assets/images/svg/box-check-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+
+    .mention {
+        color: #8c8c8c;
+        font-style: italic;
+        font-size: 12px;
+
+        &.card-body {
+            padding: 10px 20px;
+        }
+
+        .title {
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .step-exg {
+            text-indent: 20px;
+        }
+    }
+}

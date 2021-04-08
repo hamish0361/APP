@@ -1,0 +1,8 @@
+.invoice-list-card.card {
+    
+    @media screen and (max-width: 524px) {
+        .card-header .card-toolbar {
+            margin-left: auto;
+        }
+    }
+}

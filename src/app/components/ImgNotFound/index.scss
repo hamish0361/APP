@@ -1,0 +1,14 @@
+.img-not-found {
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+    svg {
+        width: 100px;
+        height: 100px;
+    }
+}

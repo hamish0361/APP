@@ -1,0 +1,77 @@
+$width-container-icon: 9rem;
+$height-container-icon: 8rem;
+$width-icon: 4rem;
+$height-icon: 4rem;
+$color-blue: #2c84ff;
+$color-red: #e61c19;
+$color-green: #199f03;
+
+.warehouse-card {
+    display: flex;
+    height: $height-container-icon;
+    box-shadow: 1px 1px 15px #888888;
+
+    &__amount {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: $width-container-icon;
+        height: $height-container-icon;
+        background-color: $color-blue;
+
+        & > img {
+            width: $width-icon;
+            height: $height-icon;
+        }
+    }
+}
+.warehouse-card {
+    display: flex;
+    height: $height-container-icon;
+    box-shadow: 1px 1px 15px #888888;
+
+    &__withdrawal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: $width-container-icon;
+        height: $height-container-icon;
+        background-color: $color-red;
+
+        & > img {
+            width: $width-icon;
+            height: $height-icon;
+        }
+    }
+}
+.warehouse-card {
+    display: flex;
+    height: $height-container-icon;
+    box-shadow: 1px 1px 15px #888888;
+
+    &__balance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: $width-container-icon;
+        height: $height-container-icon;
+        background-color: $color-green;
+
+        & > img {
+            width: $width-icon;
+            height: $height-icon;
+        }
+    }
+}
+.info-card-transition {
+    height: 100% !important;
+    width: 89% !important;
+}
+.right-card-transition {
+    background-color: $color-green;
+    height: 100% !important;
+    width: 1% !important;
+}

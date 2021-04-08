@@ -1,0 +1,20 @@
+.dashboard-info-box.card {
+
+    height: calc(100% - 25px);
+
+    .card-body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 16px;
+        max-width: 80%;
+    }
+
+    .total {
+        margin-top: auto;
+        font-size: 32px;
+    }
+}

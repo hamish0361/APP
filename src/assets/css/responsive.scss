@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1023px) {
+    .w1024-hidden {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .ipad-hidden {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .ipad-shown {
+        display: none !important;
+    }
+}

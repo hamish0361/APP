@@ -1,0 +1,43 @@
+.img-product {
+    width: 80px;
+    height: 80px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+    svg {
+        width: 100px;
+        height: 100px;
+    }
+}
+.name-product {
+    width: 625px;
+    word-break: break-all;
+}
+.app-image {
+    width: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+
+    img {
+        width: 'inherit';
+        height: '100%';
+        object-fit: 'cover';
+    }
+    .image-upload {
+        border: none;
+        background-color: #edeef7;
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        padding: unset;
+    }
+}
+.url-form {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 90%;
+}

@@ -1,0 +1,92 @@
+.io-message-wrapper {
+    position: relative;
+    min-height: 300px;
+    margin-top: 10px;
+    background: #fafafa;
+    flex-grow: 1;
+}
+
+.io-message-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 10px;
+
+    .message {
+        padding: 5px 0;
+        font-weight: 500;
+        position: relative;
+
+        > .message-wrapper {
+            display: flex;
+            align-items: center;
+
+            .time {
+                margin-right: 10px;
+                color: #1890ff;
+                white-space: nowrap;
+            }
+
+            .message-string {
+                font-size: 16px;
+
+                &.error {
+                    color: #f5222d;
+                }
+
+                &.success {
+                    color: #52c41a;
+                }
+
+                &.warning {
+                    color: #d46b08;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .message {
+            .message-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .message-string {
+                margin-left: auto;
+            }
+
+            .delete-message {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .ediable-text,
+    .editable-input {
+        margin-left: auto;
+        cursor: pointer;
+        width: auto;
+        max-width: 80px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s;
+        }
+    }
+
+    .delete-message {
+        margin-left: 5px;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s;
+        }
+    }
+}

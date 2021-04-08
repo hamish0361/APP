@@ -1,0 +1,17 @@
+.form-add-lading-bill {
+    .feedback {
+        display: none;
+    }
+
+    [class|="col"] {
+        padding: 12.5px;
+    }
+
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+}

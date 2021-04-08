@@ -1,0 +1,90 @@
+.step-2 {
+    &__empty-content {
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .empty-text {
+                font-size: 22px;
+            }
+
+            .empty-actions {
+                .btn {
+                    font-size: 18px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+.feedback {
+    display: none;
+}
+
+.box-info-center {
+    .card-header {
+        justify-content: center;
+
+        .MuiBadge-badge.MuiBadge-colorError {
+            background-color: #dc3545;
+        }
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
+
+.count-box-created {
+    .box-created {
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 55px;
+        letter-spacing: 5px;
+        color: #28a745;
+    }
+}
+
+.add-box-item {
+    &__content {
+        display: flex;
+
+        .form-add-box-item {
+            display: flex;
+            flex: 1;
+        }
+
+        .btn.btn-mw-85 {
+            max-height: 60px;
+            margin-top: 30px;
+            min-width: 85px !important;
+            margin-left: 15px;
+        }
+    }
+}
+
+.table-box-items {
+    margin-top: 30px;
+
+    .MuiTableCell-root.MuiTableCell-head {
+        font-size: 16px;
+    }
+
+    .MuiTableBody-root {
+        .product--id {
+            font-size: 28px;
+        }
+
+        .MuiTableCell-root.MuiTableCell-body:nth-child(3) {
+            max-width: 200px;
+        }
+
+        .MuiTableCell-root.MuiTableCell-body:nth-child(2) {
+            font-size: 28px;
+        }
+    }
+}

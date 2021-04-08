@@ -1,0 +1,19 @@
+.form-add-product {
+    font-size: 14px;
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    label {
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    .tomoni-base-select {
+        label {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+
+.select-shipment-info {
+    .form-group {
+        margin-bottom: 0;
+    }
+}
+
+.is-invalid {
+    .select-shipment-info {
+        .form-group {
+            [class*='control'] {
+                border-color: red;
+            }
+        }
+    }
+}

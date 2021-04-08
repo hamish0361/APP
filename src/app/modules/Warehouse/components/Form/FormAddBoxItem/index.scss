@@ -1,0 +1,39 @@
+.form-add-box-item {
+    .feedback {
+        display: none;
+    }
+
+    label:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    .valid-feedback {
+        > div {
+            display: inline;
+
+            > button.btn.btn-link {
+                display: none;
+            }
+        }
+    }
+
+    .add-product-label {
+
+        height: 24px;
+        $iconSize: 20px;
+        display: flex;
+        align-items: center;
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+
+            > svg {
+                width: $iconSize;
+                height: $iconSize;
+            }
+        }
+    }
+}

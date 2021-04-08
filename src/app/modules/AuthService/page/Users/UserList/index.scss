@@ -1,0 +1,19 @@
+.container-date {
+    & > .react-datepicker-wrapper {
+        width: 100%;
+
+        & ::after {
+            content: '';
+            background: url('../../../../../../assets/images/calendar.png');
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.3;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 3px;
+            right: 8px;
+            z-index: 0;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.list-box-items {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+    .box-items {
+        display: flex;
+
+        + .box-items {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #e4e6ef;
+        }
+
+        &__info {
+            flex-grow: 1;
+        }
+
+        &__jancode {
+            font-size: 26px;
+            color: #389e0d;
+        }
+
+        &__updateable {
+            display: flex;
+        }
+
+        .updateable-item {
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+
+            &:last-child {
+                margin-right: 15px;
+            }
+
+            input {
+                width: 140px;
+                height: 40px;
+                max-width: 150px;
+                background: transparent;
+            }
+
+            label {
+                text-align: center;
+            }
+
+            .quantity_input {
+                border: none;
+                border-bottom: 1px solid #91d5ff;
+                border-radius: 0;
+                text-align: center;
+
+                &::-webkit-inner-spin-button,
+                &::-webkit-outer-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+
+            .react-datepicker-wrapper {
+                width: 100%;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid #91d5ff;
+                    border-radius: 0;
+                    text-align: center;
+                }
+            }
+        }
+
+        &__actions {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .box-items {
+            flex-wrap: wrap;
+            position: relative;
+
+            &__info {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            &__actions {
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
+
+            &__updateable {
+                margin: auto;
+            }
+
+            .updateable-item {
+                margin: 0;
+
+                + .updateable-item {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}

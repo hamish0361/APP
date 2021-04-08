@@ -1,0 +1,102 @@
+$borderRadius: 3px;
+$placeholderSize: 50px;
+
+.modal-print.react-draggable {
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+    bottom: 90px;
+    right: 40px;
+
+    &.placeholder {
+        width: $placeholderSize + 6px;
+        height: $placeholderSize + 6px;
+        background: #fadb14;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $placeholderSize + 6px;
+        right: 15px;
+
+        .printer-placeholder {
+            display: block;
+        }
+
+        .printer-main-content {
+            transform: scale(0);
+        }
+    }
+
+    .printer-placeholder {
+        width: $placeholderSize;
+        height: $placeholderSize;
+        background: #fff;
+        padding: 5px;
+        border-radius: $placeholderSize;
+        cursor: pointer;
+        display: none;
+        position: relative;
+        z-index: 11;
+
+        &::after {
+            $hickySize: 10px;
+
+            content: '';
+            width: $hickySize;
+            height: $hickySize;
+            border-radius: $hickySize;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: #f5222d;
+        }
+    }
+
+    .printer-main-content {
+        background: #fff;
+        border-radius: $borderRadius;
+        transition: all .5s;
+        transform-origin: top left;
+    }
+
+    .modal-print-header {
+        font-size: 20px;
+        font-weight: 500;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 50px 0 20px;
+        background: #1890ff;
+        color: #fff;
+        border-top-left-radius: $borderRadius;
+        border-top-right-radius: $borderRadius;
+        text-transform: uppercase;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .messages-wrapper {
+        padding: 10px;
+        margin: 5px;
+        max-width: 350px;
+        max-height: 250px;
+        overflow-y: auto;
+        border-radius: $borderRadius;
+        background: #f0f0f0;
+    }
+
+    .actions-section {
+        padding: 0 10px 10px;
+    }
+
+    .hide-modal {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}

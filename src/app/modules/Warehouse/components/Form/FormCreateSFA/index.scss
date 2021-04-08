@@ -1,0 +1,41 @@
+.form-create-sfa {
+    .feedback {
+        display: none;
+    }
+
+    [class|="col"] {
+        padding: 12.5px;
+    }
+
+    .valid-feedback {
+        > div {
+            display: inline;
+
+            > button.btn.btn-link {
+                display: none;
+            }
+        }
+    }
+
+    .tracking-label, .agency-label {
+
+        height: 24px;
+        $iconSize: 20px;
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+
+            > svg {
+                width: $iconSize;
+                height: $iconSize;
+            }
+        }
+    }
+
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+}

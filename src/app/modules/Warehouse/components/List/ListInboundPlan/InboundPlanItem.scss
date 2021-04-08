@@ -1,0 +1,125 @@
+@keyframes run {
+    0% {
+        left: -150px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.inbound-plan-item.card {
+    font-size: 18px;
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .info-section {
+        display: flex;
+
+        $iconSize: 80px;
+
+        .absolute-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .icon-wrapper {
+            position: relative;
+            z-index: 1;
+
+            > svg {
+                width: $iconSize + 30px;
+                height: $iconSize;
+            }
+
+            &.not_yet {
+                overflow: hidden;
+                min-height: $iconSize;
+
+                > svg {
+                    position: absolute;
+                    animation-name: run;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                }
+            }
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            z-index: 10;
+
+            .status-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-weight: 600;
+                background: #52c41a;
+                padding: 10px;
+                font-size: 14px;
+                height: 30px;
+                width: 120px;
+                border-radius: 5px;
+                text-transform: uppercase;
+
+                &.pending {
+                    background: #1890ff;
+                }
+            }
+
+            .code {
+                margin-left: 20px;
+
+                &-label {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    text-decoration: underline;
+                }
+
+                &-value {
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .items-wrapper {
+        .table-tracking-products {
+            margin-top: 15px;
+
+            .MuiTableCell-head.MuiTableCell-root {
+                font-size: 1vw;
+                font-weight: 600;
+                margin: 0 10px;
+                position: relative;
+                background: #f0f0f0;
+
+                > span {
+                    z-index: 3;
+                    position: relative;
+                }
+            }
+
+            .MuiTableCell-root {
+                border: 0;
+                font-size: 1.2vw;
+                font-weight: 500;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 524px) {
+        .icon-wrapper {
+            display: none;
+        }
+    }
+}

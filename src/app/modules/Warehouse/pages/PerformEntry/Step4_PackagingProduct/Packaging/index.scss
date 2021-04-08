@@ -1,0 +1,13 @@
+.packaging {
+    @media only screen and (max-width: 767px) {
+        > .row {
+            flex-direction: column-reverse;
+        }
+
+        .box-info.row {
+            .col-lg-4.col-md-6.col-sm-6 {
+                width: 50%;
+            }
+        }
+    }
+}

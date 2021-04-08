@@ -1,0 +1,81 @@
+.app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 200px;
+        padding: 1em;
+        max-height: max-content;
+    }
+    button {
+        border: none;
+        background-color: white;
+    }
+}
+.supplier-search {
+    width: 245px;
+}
+#combo-box-demo {
+    height: 10px;
+}
+.image-product {
+    max-width: 100%;
+    max-height: 100%;
+}
+.image-product-detail {
+    width: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+}
+.card-body-image {
+    max-height: 464px;
+}
+.card-info-product {
+    min-height: 464px;
+}
+.react-tag-input {
+    background: white;
+    color: rgb(255, 255, 255);
+    border: 0.1rem solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    .react-tag-input__input {
+        background: transparent;
+        color: #333;
+        height: 20px;
+    }
+    .react-tag-input__input::placeholder,
+    .react-tag-input__input:-moz-placeholder,
+    .react-tag-input__input:-ms-input-placeholder,
+    .react-tag-input__input::-moz-placeholder,
+    .react-tag-input__input::-webkit-input-placeholder {
+        color: rgb(255, 255, 255); /* Input placeholder */
+    }
+    .react-tag-input__tag {
+        background: #3699ff;
+        font-size: 1rem;
+    }
+    .react-tag-input__tag__remove {
+        background: #3699ff;
+    }
+    .react-tag-input__tag__remove:before,
+    .react-tag-input__tag__remove:after {
+        background: rgb(255, 255, 255); /* X icon in remove button */
+    }
+}
+.button-upload-image {
+    transition-duration: 0.4s;
+    :hover {
+        background-color: #ffffff;
+    }
+}
+
+.product-info-container {
+    max-height: 250px;
+    & > .react-tag-input {
+        max-height: 250px;
+    }
+}

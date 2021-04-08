@@ -1,0 +1,15 @@
+.custom-shelve-select {
+    label {
+        .react-cm-select {
+            margin-top: 6.5px;
+        }
+
+        &.is-invalid {
+            .react-cm-select {
+                & > div {
+                    border-color: #f64e60;
+                }
+            }
+        }
+    }
+}

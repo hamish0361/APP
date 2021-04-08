@@ -1,0 +1,28 @@
+.list-sfa-for-inbound {
+    .action-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .custom-filter-warehouse {
+            min-width: 500px;
+
+            >div:first-child {
+                max-width: 200px;
+            }
+        }
+    }
+
+    .head-card.card {
+        .card-body {
+            padding: 15px;
+        }
+    }
+
+    .MuiPagination-root {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,19 @@
+.header-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.75rem;
+    border-bottom: 1px solid #ebedf3;
+    border-top-left-radius: 0.42rem;
+    border-top-right-radius: 0.42rem;
+}
+.input-flie {
+    display: none;
+}
+.button-uploadFlie {
+    margin: unset;
+    cursor: pointer;
+}
+.width-label {
+    width: 270px;
+}

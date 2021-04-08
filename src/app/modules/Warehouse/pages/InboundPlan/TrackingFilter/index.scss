@@ -1,0 +1,46 @@
+.list-tracking-filter.card {
+    .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .select-date {
+        white-space: nowrap;
+
+        label {
+            font-size: 16px;
+            font-weight: 500;
+            margin-right: 15px;
+        }
+
+        .react-datepicker-wrapper input {
+            font-size: 16px;
+        }
+    }
+
+    .MuiPagination-ul {
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    @media screen and (max-width: 524px) {
+        .react-datepicker-wrapper {
+            max-width: 100px;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .select-date {
+            label {
+                font-size: 12px;
+            }
+    
+            .react-datepicker-wrapper input {
+                font-size: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.box-item {
+    padding: 10px 0;
+
+    &__main-content {
+        display: flex;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    &.active {
+        background: rgba(54, 155, 255, 0.1);
+
+        .box-icon {
+            svg {
+                color: #ffa800;
+            }
+        }
+    }
+
+    .box-icon {
+        svg {
+            width: 60px;
+            height: 60px;
+            color: #3699ff;
+        }
+
+        .MuiBadge-colorError {
+            background: #f64e60;
+        }
+
+        .MuiBadge-anchorOriginTopRightRectangle {
+            right: 10px;
+            top: 10px;
+        }
+    }
+
+    .box-info {
+        flex-grow: 1;
+        margin-left: 15px;
+        white-space: nowrap;
+    }
+
+    .sku {
+        font-weight: 600;
+    }
+
+    .size {
+        font-size: 14px;
+    }
+
+    &:hover {
+        background: rgba(54, 155, 255, 0.1);
+    }
+
+    & + .box-item {
+        border-top: 1px solid #d8d8d8;
+    }
+
+    .label-quantity {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #f5222d;
+        padding: 2px 5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+
+    .box-childs {
+        margin: 10px 10px 0;
+    }
+
+    .box-childs-title {
+        font-size: 12px;
+        text-transform: uppercase;
+        position: relative;
+        font-weight: 500;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 1px;
+            top: 50%;
+            right: 0;
+            left: 50px;
+            background: #000;
+        }
+    }
+
+    .box-childs-wrapper {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 3px;
+
+        .box-child {
+            padding: 2px;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: '-';
+                margin-right: 3px;
+            }
+
+            &--duplicate {
+                background: #f5222d;
+                padding: 2px 5px;
+                font-size: 12px;
+                font-weight: 600;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                margin-left: auto;
+            }
+        }
+    }
+}

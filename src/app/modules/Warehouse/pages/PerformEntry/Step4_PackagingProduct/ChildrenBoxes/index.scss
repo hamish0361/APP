@@ -1,0 +1,26 @@
+.children-boxes.card {
+    .card-body {
+        padding: 10px;
+
+        .form {
+            flex-grow: 1;
+        }
+
+        .action-submit {
+            margin-left: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > span {
+                cursor: pointer;
+            }
+        }
+
+        .table-box-childs {
+            .MuiTableCell-root {
+                font-size: 16px;
+            }
+        }
+    }
+}

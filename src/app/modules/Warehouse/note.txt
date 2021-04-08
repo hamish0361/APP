@@ -1,0 +1,68 @@
+
+WAREHOUSE
+- Những mùa nhớ -
+(Không nhớ là đi theo thầy Huấn bán hoa hồng cmnl)
+
+------------------------------------------------------------------------------------
+
+***** Nhập hàng *****
+1. Kiểm tra tracking
+    a. Có tracking --> lấy tracking --> tạo SFA
+    b. Không có tracking --> call API tạo tracking --> Tạo SFA
+
+2. Thông tin tạo SFA --> Như trên API
+
+3. In nhãn
+
+------------------------------------------------------------------------------------
+
+**** Kiểm hàng ****
+1. Kiểm cho SFA nào (lô nào, box nào).
+
+2. Cân đo đong đếm (lấy width, height, weight, length).
+
+3. Check Item:
+    a. Có item có jancode (product ID)
+    b. Item không có jancode (lấy id theo loại item vd: 'Đồng hồ', 'Máy tính')
+
+4. Đóng gói.
+    a. Thùng lẻ
+    b. Thùng serial (Tạo box, sau đó dupplicate).
+
+5. In nhãn
+
+------------------------------------------------------------------------------------
+
+**** Đóng gói ****
+
+1. Check yêu cầu
+    a. Không yêu cầu đóng gói ----> pass qua bước này
+    b. Có yêu cầu đóng gói
+        * Tạo Parent / Child box 
+        * Resize SKU ----> Nhập lại width, height, weight, length
+
+------------------------------------------------------------------------------------
+
+**** Phân hàng ****
+- Bước này thực hiện sau khi đã lưu hàng vào kho
+1. Chia SKU cho order nào.
+    * Đơn lẻ, xét theo tracking.
+    * Đơn sỉ, lô, cũng xét theo tracking nhưng nếu trong trường hợp SKU không đủ cho order thì bước này saler tự làm.
+
+------------------------------------------------------------------------------------
+
+**** Lưu kho ****
+1. Bỏ SKU lên pallet
+
+2. Đem pallet đi cất vào 1 cái shelve trong area nào đó.
+
+
+
+**** Vận đơn ****
+1. Chuyển SKU cho khách theo 1 phương thức nào đó. Túm cái váy lại là tạo Laddingbill ấy.
+
+Exg: 10 SKU đang ở kho Nhật chuyển về cho 1 KH ở Quảng Nam.
+    a. Chuyển 10 SKU về kho ĐN. (Đoạn tối ưu di chuyển này lão tôn đau đầu quá nên coi như là bỏ qua đi)
+    b. Chuyển 10 SKU từ kho ĐN đến địa chỉ khách hàng. ---> chuyển cho khách hàng thì gọi là xuất kho.
+
+------------------------------------------------------------------------------------

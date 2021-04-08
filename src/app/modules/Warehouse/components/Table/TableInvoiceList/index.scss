@@ -1,0 +1,76 @@
+.table-invoice-list {
+    td,
+    th {
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .sub-info {
+        font-size: 14px;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & + .sub-info__item {
+                margin-top: 3px;
+            }
+        }
+
+        &__title {
+            font-weight: 500;
+            text-decoration: underline;
+            color: #434343;
+            white-space: nowrap;
+
+            &::after {
+                content: ':';
+            }
+        }
+
+        &__value {
+            margin-left: 15px;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+    }
+
+    .cost-section {
+        .cost-item {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            color: #3699FF;
+            justify-content: space-between;
+
+            &__title {
+                font-weight: 500;
+                text-decoration: underline;
+                white-space: nowrap;
+
+                &::after {
+                    content: ':';
+                }
+            }
+
+            &__value {
+                margin-left: 15px;
+                white-space: nowrap;
+            }
+
+            & + .cost_item {
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .container-shipment {
+        font-weight: 500;
+
+        &__value {
+            color: #3699FF;
+            text-decoration: none;
+        }
+    }
+}

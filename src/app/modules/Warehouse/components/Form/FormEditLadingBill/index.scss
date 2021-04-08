@@ -1,0 +1,17 @@
+.form-edit-lading-bill {
+    font-size: 16px;
+
+    input, select {
+        font-size: 16px;
+    }
+
+    div.row {
+         > div:not(:first-child) {
+             margin-top: 15px;
+         }
+    }
+
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+}

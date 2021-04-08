@@ -1,0 +1,135 @@
+// 3rd-party Plugins
+@import '~highlight.js/styles/googlecode.css';
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+// Theme Styles
+@import './_metronic/_assets/sass/style.react.scss';
+@import './assets/css/table.scss';
+@import './assets/css/responsive.scss';
+
+// Default Layout themes
+@import './_metronic/_assets/sass/themes/layout/header/base/light.scss';
+@import './_metronic/_assets/sass/themes/layout/header/menu/light.scss';
+@import './_metronic/_assets/sass/themes/layout/brand/dark.scss';
+@import './_metronic/_assets/sass/themes/layout/aside/dark.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Header themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/base/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/base/dark.scss";
+
+// Header Menu themes
+// Light
+//@import "./_metronic/_assets/sass/themes/layout/header/menu/light.scss";
+// Dark
+// @import "./_metronic/_assets/sass/themes/layout/header/menu/dark.scss";
+
+// Brand themes
+.brand-dark {
+    @import './_metronic/_assets/sass/themes/layout/brand/dark.scss';
+}
+// Light
+.brand-light {
+    @import './_metronic/_assets/sass/themes/layout/brand/light.scss';
+}
+
+.body {
+    font-family: 'Montserrat', serif;
+}
+
+// Aside themes
+// Dark
+//@import "./_metronic/_assets/sass/themes/layout/aside/dark.scss";
+// Light
+// @import "./_metronic/_assets/sass/themes/layout/aside/light.scss";
+
+// .example-highlight {
+//   padding: 0rem 1.5rem 1.75rem !important;
+// }
+
+.example-highlight > pre {
+    background: none transparent !important;
+    margin: 0 !important;
+    padding-top: 0.5rem;
+    code {
+        overflow-y: auto;
+        display: block;
+
+        span {
+            background: none transparent !important;
+        }
+    }
+}
+
+.json > pre {
+    background: none #fff !important;
+}
+
+.example-code > .json {
+    background: none #fff !important;
+}
+
+.symbol.symbol-45 > svg {
+    width: 100%;
+    max-width: 45px;
+    height: 45px;
+}
+
+.react-bootstrap-table {
+    overflow-x: auto;
+}
+
+.react-bootstrap-table {
+    th {
+        outline: none;
+
+        &.sortable {
+            .svg-icon-sort {
+                opacity: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                .svg-icon-sort {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .table.table-head-custom thead tr {
+        .sortable-active {
+            color: $primary !important;
+        }
+    }
+}
+
+.cursor-default {
+    cursor: default !important;
+}
+
+.row-table {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+div.form-api-error {
+    @extend .alert;
+    @extend .alert-custom;
+    @extend .alert-light-danger;
+    color: #f64e60;
+    @extend .font-weight-bold;
+}
+
+div.form-api-success {
+    @extend .alert;
+    @extend .alert-custom;
+    @extend .alert-light-success;
+    color: #1bc5bd;
+    @extend .font-weight-bold;
+}

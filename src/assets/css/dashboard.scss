@@ -1,0 +1,77 @@
+$color-date: #752ffb;
+$max-height: 352px;
+$color-gray: #ebedf3;
+$color-dark: #3f4254;
+$color-bg-yellow: #ebc451;
+$color-text-yellow: #a57606;
+$color-bg-green: #caf7e8;
+$color-text-green: #159665;
+$color-bg-red: #fcd2d8;
+$color-text-red: #ad2738;
+$timeline-5-label-width: 80px;
+$timeline-5-bar-width: 40px;
+$timeline-5-badge-size: 13px;
+$timeline-5-bar-border-width: 3px;
+$width-image: 65px;
+$height-image: 65px;
+$color-bg-item: #e2e3ef;
+
+.dashboard-log {
+    max-height: 330px;
+
+    &__date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 3rem;
+        height: 3rem;
+
+        background-color: $color-date;
+        color: white;
+        font-weight: 600;
+        border-radius: 0.4rem;
+    }
+
+    &__time {
+        color: $color-date;
+        font-size: 1rem;
+    }
+}
+
+.dashboard-tracking {
+    max-height: 330px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &:nth-child(even) {
+            background-color: $color-bg-item;
+        }
+    }
+}
+
+.dashboard-info {
+    &__profile {
+        & > img {
+            width: $width-image;
+            height: $height-image;
+        }
+    }
+    &__vnd {
+        border-radius: 0.3rem;
+        color: $color-text-yellow;
+        background-color: $color-bg-yellow;
+    }
+    &__jpy {
+        border-radius: 0.3rem;
+        color: $color-text-green;
+        background-color: $color-bg-green;
+    }
+    &__usd {
+        border-radius: 0.3rem;
+        color: $color-text-red;
+        background-color: $color-bg-red;
+    }
+}

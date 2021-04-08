@@ -1,0 +1,29 @@
+$btnIconSize: 35px;
+
+.input-add-pallet {
+
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    input.form-control {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .custom-button {
+
+        margin-left: 5px;
+        cursor: pointer;
+        opacity: .9;
+
+        > svg {
+            width: $btnIconSize;
+            height: $btnIconSize;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

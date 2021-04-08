@@ -1,0 +1,76 @@
+.current-sfa-container {
+
+     > div {
+         flex-wrap: wrap;
+     }
+
+    .current-sfa {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid #bae7ff;
+        padding-top: 10px;
+        margin-top: 5px;
+    
+        > div {
+            padding: 5px 10px;
+            font-weight: 500;
+            font-size: 14px;
+            position: relative;
+    
+            &:not(:last-child) {
+                &::after {
+                    content: '';
+                    width: 1px;
+                    background: #bae7ff;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    .action-edit-sfa {
+        margin-top: 5px;
+        margin-left: auto;
+    }
+    
+    .form-edit-sfa-section {
+        overflow: hidden;
+    
+        .form-edit-sfa-wrapper {
+            border-top: 1px solid #bae7ff;
+            margin-top: 20px;
+            transition: all 0.5s;
+        }
+    
+        &.hide {
+            height: 0;
+    
+            .form-edit-sfa-wrapper {
+                transform: translateY(-100%);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+        .current-sfa {
+            > div {
+                &:not(:last-child) {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .action-edit-sfa {
+            width: 100%;
+            text-align: right;
+            white-space: nowrap;
+            overflow: visible;
+        }
+    }
+}

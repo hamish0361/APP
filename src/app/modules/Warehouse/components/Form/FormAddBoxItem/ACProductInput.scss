@@ -1,0 +1,52 @@
+.ac-product-input {
+    position: relative;
+    width: 100%;
+
+    .auto-complete-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 400px;
+        z-index: 1;
+        border: 1px solid #bae7ff;
+        overflow-y: auto;
+        background: rgba(254, 255, 230, .9);
+
+        .empty-data {
+            max-width: none;
+            margin: 0;
+        }
+
+        .list-product-item-wrapper {
+            .product-item {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 0;
+                padding: 0 10px;
+                width: 100%;
+                cursor: pointer;
+
+                &:hover {
+                    background: #e6f7ff;
+                }
+
+                .jancode {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .product-name {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+
+                .price {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #cf1322;
+                }
+            }
+        }
+    }
+}

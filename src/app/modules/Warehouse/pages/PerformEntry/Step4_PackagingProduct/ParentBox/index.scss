@@ -1,0 +1,81 @@
+.parent-box-container {
+
+    .header-section {
+        border-bottom: 1px solid #d8d8d8;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .extra-action {
+            > .btn {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .icon-section {
+        $iconSize: 60px;
+
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+
+        >svg {
+            width: $iconSize;
+            height: $iconSize;
+        }
+
+        .bar-code {
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+
+    .content-section {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .action-section {
+        text-align: right;
+
+        button {
+            font-size: 16px;
+        }
+    }
+
+    .volume-progress-section {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 10px 0;
+
+        .progress {
+            height: 25px;
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+
+            .progress-label {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    .box-packing-cost {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 20px 0;
+
+        .btn-packing-cost {
+            height: 60px;
+            min-width: 80px;
+            white-space: nowrap;
+        }
+    }
+}

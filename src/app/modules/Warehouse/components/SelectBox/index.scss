@@ -1,0 +1,12 @@
+.select-box {
+
+    flex-grow: 1;
+
+    input {
+        height: unset !important;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+}

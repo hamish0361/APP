@@ -1,0 +1,139 @@
+.sfa-item.card {
+    font-size: 16px;
+
+    .card-body {
+        padding: 0;
+        display: flex;
+    }
+
+    .sfa-info {
+        padding: 15px;
+        flex-grow: 1;
+        white-space: nowrap;
+        overflow: hidden;
+
+        .sfa-head {
+            cursor: pointer;
+
+            &:hover {
+                .sfa-info--id {
+                    color: #1890ff;
+                    font-weight: 500;
+
+                    .redirect-icon {
+                        right: -100px;
+                    }
+                }
+            }
+        }
+
+        .redirect-icon {
+            position: absolute;
+            top: 0;
+            right: -26px;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
+            user-select: none;
+        }
+
+        &--id {
+            font-size: 32px;
+            position: relative;
+            display: inline;
+        }
+
+        &--tracking, &--agency, &--arrival_date {
+            font-size: 14px;
+            color: #8c8c8c;
+        }
+
+        &--quantity-status {
+            margin-left: 50px;
+            font-size: 24px;
+            font-weight: 500;
+            margin-right: 25px;
+        }
+
+        &--suggest-shipment-method {
+            position: relative;
+            color: #8c8c8c;
+            font-size: 14px;
+
+            b {
+                font-size: 32px;
+                text-transform: uppercase;
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+                line-height: 32px;
+            }
+        }
+    }
+
+    .sfa-list-box {
+        min-width: 250px;
+        background: #e6f7ff;
+        padding: 15px;
+        overflow: auto;
+
+        .sfa-box-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--id {
+                font-weight: 500;
+            }
+
+            &--duplicate {
+                background: #f5222d;
+                padding: 3px 5px;
+                font-weight: 600;
+                color: #fff;
+                font-size: 12px;
+                border: 2px solid #fff;
+                border-radius: 3px;
+
+                &.success {
+                    background: #389e0d;
+                }
+            }
+
+            + .sfa-box-item {
+                margin-top: 5px;
+                padding-top: 5px;
+                border-top: 1px solid #d8d8d8;
+            }
+        }
+    }
+}
+
+.owner-tooltip {
+    min-width: 240px;
+
+    .tooltip-inner {
+        max-width: none;
+    }
+}
+
+.owner-list {
+    .owner-item {
+        display: flex;
+        min-width: 200px;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+
+        + .owner-item {
+            border-top: 1px solid #d8d8d8;
+        }
+
+        .owner-quantity {
+            font-weight: 600;
+            color: #1BC5BD;
+        }
+    }
+}

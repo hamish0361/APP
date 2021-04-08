@@ -1,0 +1,25 @@
+.form-add-invoce {
+    .react-datepicker-wrapper {
+        display: block;
+    }
+
+    [class|="col"] {
+        padding-bottom: 12px;
+
+        label {
+            font-weight: 600;
+        }
+
+        .feedback {
+            display: none;
+        }
+
+        .invalid-datepicker-feedback{
+            color: #F64E60;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+}

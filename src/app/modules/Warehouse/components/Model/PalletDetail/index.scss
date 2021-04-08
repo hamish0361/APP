@@ -1,0 +1,221 @@
+.pallet-detail {
+    position: absolute;
+    top: 0;
+    left: 140px;
+    transform: translate(-100%, -100%);
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    z-index: 1;
+    transition: all 0.2s;
+    transform-origin: top left;
+    padding: 5px;
+
+    &.show {
+        right: 0;
+        bottom: 0;
+        transform: translate(0, 0);
+    }
+
+    .pallet-detail-head {
+        background-color: #fff;
+
+        .pallet-id {
+            font-weight: 500;
+            font-size: 18px;
+            text-indent: 15px;
+        }
+    }
+
+    .pallet-content {
+        flex-grow: 1;
+        margin-top: 10px;
+        display: flex;
+        max-height: calc(100% - 60px);
+    }
+
+    .list-box-wrapper {
+        background: #fff;
+        padding: 5px 10px;
+        width: 250px;
+        font-size: 16px;
+        overflow: auto;
+
+        .box {
+            border-radius: 3px;
+            padding: 10px 5px;
+            cursor: pointer;
+
+            + .box {
+                border-top: 1px solid #d8d8d8;
+            }
+
+            .box-id {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+            }
+
+            &:hover {
+                .show-on-hover {
+                    opacity: 1;
+                }
+            }
+
+            .show-on-hover {
+                opacity: 0;
+                transition: all 0.2s;
+            }
+
+            &.selected {
+                background: #bae7ff;
+
+                .show-on-hover {
+                    opacity: 1;
+                }
+            }
+
+            .quantity-on-pallet {
+                background: #f5222d;
+                color: #fff;
+                font-weight: 500;
+                font-size: 12px;
+                border: 1px solid #fff;
+                padding: 3px 5px;
+                border-radius: 5px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .box-content {
+        flex-grow: 1;
+        margin-left: 10px;
+        background: #fff;
+        padding: 10px;
+    }
+
+    .box-info {
+        width: 360px;
+        font-size: 16px;
+
+        .box-relative {
+            width: 100%;
+        }
+    }
+
+    .box-items-wrapper {
+        flex-grow: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        border-left: 1px solid #d8d8d8;
+    }
+
+    .icon-section {
+        position: relative;
+        background: #f0f0f0;
+        padding: 10px;
+        width: 100%;
+
+        > svg {
+            width: 120px;
+            height: 120px;
+        }
+
+        .bar-code {
+            position: absolute;
+            left: 140px;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            > svg {
+                width: 200px;
+
+                > rect {
+                    fill: rgba(45, 255, 0, 0.4) !important;
+                }
+            }
+        }
+
+        + div {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            > div:not(:first-child) {
+                margin-left: 10px;
+            }
+
+            > div:not(:last-child) {
+                &::after {
+                    content: ',';
+                }
+            }
+        }
+    }
+
+    .box-items-title {
+        font-size: 16px;
+        border-bottom: 1px solid #ccc;
+        font-weight: 500;
+    }
+
+    .box-items-list {
+        flex-grow: 1;
+        overflow: auto;
+        background: #fafafa;
+        margin-top: 3px;
+
+        .box-item {
+            padding: 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fff;
+            cursor: default;
+
+            &__product-id {
+                color: #1890ff;
+                font-weight: 600;
+            }
+
+            &__quantity {
+                font-size: 14px;
+            }
+        }
+
+        .box-child {
+            padding: 5px;
+            border: 1px solid #73d13d;
+
+            .box-child-id {
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1240px) {
+        .box-content .box-info {
+            display: none;
+        }
+
+        .box-items-wrapper {
+            border: 0;
+            margin-left: 0;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .box-content {
+            display: none;
+        }
+
+        .list-box-wrapper {
+            width: 100%;
+        }
+    }
+}

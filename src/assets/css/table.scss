@@ -1,0 +1,7 @@
+.MuiTable-root.table-even-odd {
+    .MuiTableBody-root {
+        .MuiTableRow-root:nth-child(odd) {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+}

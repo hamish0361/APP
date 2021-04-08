@@ -1,0 +1,15 @@
+.select-customer {
+    .form-group {
+        margin-bottom: 0;
+    }
+}
+
+.is-invalid {
+    .select-customer {
+        .form-group {
+            [class*='control'] {
+                border-color: red;
+            }
+        }
+    }
+}

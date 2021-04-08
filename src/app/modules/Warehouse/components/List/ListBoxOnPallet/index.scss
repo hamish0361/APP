@@ -1,0 +1,175 @@
+.list-box-in-pallet {
+    background: rgba(54, 155, 255, 0.1);
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .list-box {
+        flex-grow: 1;
+        background-color: #fff;
+        min-height: 300px;
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    .title {
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+    .list-box-items {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .box-item {
+            padding: 10px;
+            border-top: 0;
+        }
+
+        .box-wrapper {
+            &:hover {
+                .close-icon {
+                    display: flex;
+                }
+
+                .pivot-quantity {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .MuiPagination-root {
+        padding: 10px 0px;
+
+        .MuiPagination-ul {
+            justify-content: flex-end;
+        }
+    }
+
+    .close-icon {
+        top: 5px;
+        right: 5px;
+        display: none;
+        width: 20px;
+        height: 20px;
+        background: #f64e60;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 4;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .other-sfa {
+        background: #ffa800;
+        color: #fff;
+        font-weight: 600;
+        padding: 0 5px;
+        border-radius: 5px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 15px;
+        left: 17px;
+        z-index: 1;
+    }
+
+    .pivot-quantity {
+        display: none;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.7);
+
+        label {
+            color: #fff;
+        }
+
+        input.input-change-pivot {
+            height: 40px;
+            width: 80px;
+            font-size: 14px;
+            margin-left: 15px;
+        }
+    }
+
+    .pivot-quantity-icon {
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        width: 20px;
+        height: 20px;
+        background: #f64e60;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .select-pallet-type {
+        width: 100%;
+
+        .form-group {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+
+            label {
+                font-weight: normal;
+                text-decoration: underline;
+            }
+
+            > div {
+                min-width: 200px;
+                margin-left: 15px;
+            }
+        }
+
+        input {
+            height: 28px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .select-pallet-type {
+            margin-bottom: 10px;
+        }
+
+        .toolbar {
+            width: 100%;
+        }
+    }
+}

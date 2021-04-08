@@ -1,0 +1,77 @@
+.list-box-for-form-add-goods-delivery-boxes {
+    background: #fafafa;
+    padding: 10px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+
+    .boxes-list {
+        flex-grow: 1;
+    }
+
+    .custom-header {
+        border-bottom: 1px solid #ccc;
+        background: #fafafa;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .toolbar {
+        width: 300px;
+    }
+
+    .list-items {
+        max-height: 200px;
+        overflow-y: scroll;
+        margin-top: 10px;
+        min-height: 100px;
+
+        [class|='col'] {
+            background: #fff;
+        }
+    }
+
+    .MuiList-root {
+        .MuiListItem-root {
+            display: inline-flex;
+
+            $iconSize: 30px;
+
+            .item-box {
+                display: flex;
+                align-items: center;
+
+                > svg {
+                    width: $iconSize;
+                    height: $iconSize;
+                }
+            }
+
+            .item-box-id {
+                font-weight: 500;
+                font-size: 18px;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .MuiPagination-ul {
+        justify-content: flex-end;
+    }
+
+    .item-quantity {
+        margin-left: 74px;
+        display: flex;
+        align-items: center;
+
+        input {
+            max-width: 100px;
+        }
+    }
+}
